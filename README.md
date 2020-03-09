@@ -1,4 +1,4 @@
-# hue-day-sync
+# huedaysync
 
 ## Helpful Links
 
