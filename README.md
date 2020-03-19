@@ -10,6 +10,13 @@ https://developers.meethue.com/develop/hue-api/
 
 ## Notes
 
+### Rules
+
+The response from a hue command returns a response that is a list of dicts,
+with each dict containing one key that is (hopefully) "Success" whose value 
+is the successful action.  This action string can be used in a rule for
+the rule's "action".  This is a handy way of getting the right syntax.
+
 ### Operators
 
 The `"dx"` operator in a condition of a Rule means "whenever this changes,
