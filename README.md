@@ -14,8 +14,8 @@ https://developers.meethue.com/develop/hue-api/
 
 ### Time Patterns
 
-The Weekday specification [bbb] is a decimal number of the binary specification
-where each bit stands for a day of the week:
+The Weekday specification `[bbb]` is a decimal number of the binary
+specification where each bit stands for a day of the week:
 
 | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 |-----|-----|-----|-----|-----|-----|-----|
