@@ -17,12 +17,9 @@ https://developers.meethue.com/develop/hue-api/
 The Weekday specification [bbb] is a decimal number of the binary specification
 where each bit stands for a day of the week:
 
-Monday = 64, Tuesday = 32, Wednesday = 16, Thursday = 8,
-Friday = 4, Saturday = 2, Sunday = 1
-
 | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 |-----|-----|-----|-----|-----|-----|-----|
-| 64  | 32  | 16  |  8  |  4  |  2  |  1  |
+|   64|   32|   16|    8|    4|    2|    1|
 
 ### Rules
 
