@@ -23,7 +23,7 @@ specification where each bit stands for a day of the week:
 
 ### Schedules
 
-Schedules (inexplicably) use the long form of the address in `"command"`, i.e. /api/<username>/...
+Schedules (inexplicably) use the long form of the address in `"command"`, i.e. /api/\<username\>/...
 
 ### Rules
 
