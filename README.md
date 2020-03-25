@@ -46,6 +46,8 @@ will also include a `"value"` which is a relative timePattern.
 
 For some reason the value for `"value"` must be a string, e.g. `"1"` NOT `1`.
 
+Philips Hue rules never use `"eq"` with `"0"`.  They always instead use `"lt"` with `"1"`.  Why?  Does `"eq"` not work with `"0"`?
+
 ### Sensors
 
 #### CLIPGenericStatus
