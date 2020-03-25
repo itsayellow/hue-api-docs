@@ -12,7 +12,7 @@ https://developers.meethue.com/develop/hue-api/
 
 ### Datatypes
 
-### Time Patterns
+#### Time Patterns
 
 The Weekday specification `[bbb]` is a decimal number of the binary
 specification where each bit stands for a day of the week:
@@ -21,6 +21,10 @@ specification where each bit stands for a day of the week:
 |-----|-----|-----|-----|-----|-----|-----|
 |   64|   32|   16|    8|    4|    2|    1|
 
+### Schedules
+
+Schedules (inexplicably) use the long form of the address in `"command"`, i.e. /api/<username>/...
+
 ### Rules
 
 The response from a hue command returns a response that is a list of dicts,
@@ -28,15 +32,19 @@ with each dict containing one key that is (hopefully) "Success" whose value
 is the successful action.  This action string can be used in a rule for
 the rule's "action".  This is a handy way of getting the right syntax.
 
-### Operators
+#### Rule Operators
 
-The `"dx"` operator in a condition of a Rule means "whenever this changes,
+`"dx"` only seems to work with sensors.  The `"dx"` operator in a condition of a Rule means "whenever this changes,
 this condition is triggered as true."  Often the address for this condition
-is the `lastupdated` field of a sensor or light.
+is the `lastupdated` field of a sensor.
 
-The `"ddx"` operator in a condition of a Rule means "whenever this changes,
+`"ddx"` only seems to work with sensors.  The `"ddx"` operator in a condition of a Rule means "whenever this changes,
 this condition is triggered as true after a specified delay."  The condition
 will also include a `"value"` which is a relative timePattern.
+
+#### Rule Conditions
+
+For some reason the value for `"value"` must be a string, e.g. `"1"` NOT `1`.
 
 ### Sensors
 
