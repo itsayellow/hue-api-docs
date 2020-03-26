@@ -32,6 +32,16 @@ with each dict containing one key that is (hopefully) "Success" whose value
 is the successful action.  This action string can be used in a rule for
 the rule's "action".  This is a handy way of getting the right syntax.
 
+#### Rule Actions
+
+Each action in the list of actions must be simple.  That is, each action's body must only be key/value pairs, where the values are not another compound object but either a string or a number or a boolean.
+
+#### Rule Conditions
+
+For some reason the value for `"value"` must be a string, e.g. `"1"` NOT `1`.
+
+Philips Hue rules never use `"eq"` with `"0"`.  They always instead use `"lt"` with `"1"`.  Why?  Does `"eq"` not work with `"0"`?
+
 #### Rule Operators
 
 `"dx"` only seems to work with sensors.  The `"dx"` operator in a condition of a Rule means "whenever this changes,
@@ -41,12 +51,6 @@ is the `lastupdated` field of a sensor.
 `"ddx"` only seems to work with sensors.  The `"ddx"` operator in a condition of a Rule means "whenever this changes,
 this condition is triggered as true after a specified delay."  The condition
 will also include a `"value"` which is a relative timePattern.
-
-#### Rule Conditions
-
-For some reason the value for `"value"` must be a string, e.g. `"1"` NOT `1`.
-
-Philips Hue rules never use `"eq"` with `"0"`.  They always instead use `"lt"` with `"1"`.  Why?  Does `"eq"` not work with `"0"`?
 
 ### Sensors
 
