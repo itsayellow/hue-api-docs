@@ -61,7 +61,8 @@ Other conditions accompanying a `"ddx"` condition sample their states after the
 #### CLIPGenericStatus
 
 This is a state that contains a `"status"` field that can take on an integer
-value.  It also keeps track of `"lastupdated"`
+value.  It seems to be a 31-bit integer, with maximum value allowed of 
+2_147_483_647.  It also keeps track of `"lastupdated"`
 
 To Set (example is one item in list of `"actions"` in a Rule):
 ```
