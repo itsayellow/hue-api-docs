@@ -40,7 +40,7 @@ Each action in the list of actions must be simple.  That is, each action's body 
 
 For some reason the value for `"value"` must be a string, e.g. `"1"` NOT `1`.
 
-Philips Hue rules never use `"eq"` with `"0"`.  They always instead use `"lt"` with `"1"`.  Why?  Does `"eq"` not work with `"0"`?
+While using a condition with `"eq"` and `"0"` seems to work just fine, Philips Hue rules never use `"eq"` with `"0"`.  They always instead use `"lt"` with `"1"`.  Why?
 
 #### Rule Operators
 
@@ -53,9 +53,8 @@ of a Rule means "whenever this changes, this condition is triggered as true
 after a specified delay."  The condition will also include a `"value"` which is
 a relative timePattern.
 
-It is unclear if conditions accompanying a `"ddx"` condition sample their
-states for the original change of the `"ddx"` address or the delayed version of
-that address.  TODO
+Other conditions accompanying a `"ddx"` condition sample their states after the
+`"ddx"` delay, NOT during the original event.
 
 ### Sensors
 
