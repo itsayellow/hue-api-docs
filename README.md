@@ -44,13 +44,18 @@ Philips Hue rules never use `"eq"` with `"0"`.  They always instead use `"lt"` w
 
 #### Rule Operators
 
-`"dx"` only seems to work with sensors.  The `"dx"` operator in a condition of a Rule means "whenever this changes,
-this condition is triggered as true."  Often the address for this condition
-is the `lastupdated` field of a sensor.
+`"dx"` only seems to work with sensors.  The `"dx"` operator in a condition of
+a Rule means "whenever this changes, this condition is triggered as true."
+Often the address for this condition is the `lastupdated` field of a sensor.
 
-`"ddx"` only seems to work with sensors.  The `"ddx"` operator in a condition of a Rule means "whenever this changes,
-this condition is triggered as true after a specified delay."  The condition
-will also include a `"value"` which is a relative timePattern.
+`"ddx"` only seems to work with sensors.  The `"ddx"` operator in a condition
+of a Rule means "whenever this changes, this condition is triggered as true
+after a specified delay."  The condition will also include a `"value"` which is
+a relative timePattern.
+
+It is unclear if conditions accompanying a `"ddx"` condition sample their
+states for the original change of the `"ddx"` address or the delayed version of
+that address.  TODO
 
 ### Sensors
 
