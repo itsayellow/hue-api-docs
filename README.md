@@ -34,6 +34,8 @@ Then from the  the Hue xy values (little-x, little-y) are as follows.  Little-x 
 ["RGB/XYZ Matrices"](http://www.brucelindbloom.com/index.html?Eqn_RGB_XYZ_Matrix.html)
 * This seems excellent.  What we need to do is to solve for the matrix M that maps between sensor RGB and Hue XY by changing the Hue bulbs color and noting the RGB values.
 
+[Wikipedia "CIE 1931 color space"](https://en.wikipedia.org/wiki/CIE_1931_color_space)
+
 ### Datatypes
 
 #### Time Patterns
