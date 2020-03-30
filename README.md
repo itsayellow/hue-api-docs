@@ -10,6 +10,15 @@ https://developers.meethue.com/develop/hue-api/
 
 ## Notes
 
+### Colors
+
+The Hue api documentation (https://developers.meethue.com/develop/application-design-guidance/color-conversion-formulas-rgb-to-xy-and-back/) has a missing group of equations for the "Wide RGB D65 conversion formula".  A gist (https://gist.github.com/popcorn245/30afa0f98eea1c2fd34d) was found that contained the formulas:
+
+* `float X = red * 0.649926f + green * 0.103455f + blue * 0.197109f;`
+* `float Y = red * 0.234327f + green * 0.743075f + blue * 0.022598f;`
+* `float Z = red * 0.0000000f + green * 0.053077f + blue * 1.035763f;`
+
+
 ### Datatypes
 
 #### Time Patterns
