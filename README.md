@@ -122,3 +122,7 @@ To Set (example is one item in list of `"actions"` in a Rule):
         "method": "PUT"
     }
 ```
+
+### Resourcelinks
+
+Each resourcelink contains a list of links to other resources on the bridge (addresses of specific groups, rules, scenes, schedules, sensors).  If the specified resource has the flag `recycle` set to True, then if all resourcelinks pointing to it are deleted, it too will be deleted.
