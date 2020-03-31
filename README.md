@@ -27,6 +27,8 @@ Then from the  the Hue xy values (little-x, little-y) are as follows.  Little-x 
 * `float x = X / (X + Y + Z);`
 * `float y = Y / (X + Y + Z);`
 
+Hue also says that `brightness = Y` which presumably means that `bri = 254*Y`. (??)
+
 ### Links
 
 ["How to convert between sRGB and CIEXYZ"](https://www.image-engineering.de/library/technotes/958-how-to-convert-between-srgb-and-ciexyz)
