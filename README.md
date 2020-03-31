@@ -53,6 +53,10 @@ specification where each bit stands for a day of the week:
 
 Schedules (inexplicably) use the long form of the address in `"command"`, i.e. /api/\<username\>/...
 
+The `recycle` field can only be true if we include the schedule in a list of addresses in a resourcelink using hue_bridge.resourcelinks()
+
+`autodelete` is by default true.  This is good, so that any non-recurring schedule that is past (expired) will be automatically deleted.
+
 ### Rules
 
 The response from a hue command returns a response that is a list of dicts,
