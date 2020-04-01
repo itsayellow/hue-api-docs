@@ -69,8 +69,10 @@ specification where each bit stands for a day of the week:
 Schedules (inexplicably) use the long form of the address in `"command"`, i.e.
 /api/\<username\>/...
 
-The `recycle` field can only be true if we include the schedule in a list of
-addresses in a resourcelink using hue\_bridge.resourcelinks()
+The `recycle` field should only be true if we include the schedule in a list of
+addresses in a resourcelink using hue\_bridge.resourcelinks().  In this case
+when the resroucelink is deleted, so will any resources linked to it that
+have `recycle` set to true.
 
 `autodelete` is by default true.  This is good, so that any non-recurring
 schedule that is past (expired) will be automatically deleted.
