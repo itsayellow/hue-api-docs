@@ -105,12 +105,10 @@ Often the address for this condition is the `lastupdated` field of a sensor.
 `"ddx"` only seems to work with sensors.  The `"ddx"` operator in a condition
 of a Rule means "whenever this changes, this condition is triggered as true
 after a specified delay."  The condition will also include a `"value"` which is
-a relative timePattern.
-
-Other conditions accompanying a `"ddx"` condition sample their states after the
-`"ddx"` delay, NOT during the original event.  TODO: It is possible that
-accompanying conditions need to be valid both for the original event starting
-the "ddx" and after the delay.  Need to verify
+a relative timePattern.  During the delay, the address must remain stable.
+If the address in the `"ddx"` condition changes, the delay will start again.
+If you need a delay that is longer than the address will be stable, it is
+best to use a rule with a schedule timer instead of `"ddx"`.
 
 ### Sensors
 
