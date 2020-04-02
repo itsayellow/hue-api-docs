@@ -2,6 +2,8 @@
 
 by Matthew A. Clapp
 
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
 ## Helpful Links
 
 https://github.com/Overboard/discoverhue
