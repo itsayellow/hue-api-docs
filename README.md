@@ -1,4 +1,6 @@
-# huedaysync
+# Hue API Documentation
+
+by Matthew A. Clapp
 
 ## Helpful Links
 
