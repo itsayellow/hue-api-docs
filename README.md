@@ -110,7 +110,7 @@ Hue rules never use `"eq"` with `"0"`.  They always instead use `"lt"` with
 `"1"`.  Why?
 
 There are a maximum number of conditions in a given rule.  The limit **may** be
-8, like actions
+8, like actions.
 
 #### Rule Operators
 
