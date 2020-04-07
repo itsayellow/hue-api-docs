@@ -99,6 +99,8 @@ Each action in the list of actions must be simple.  That is, each action's body
 must only be key/value pairs, where the values are not another compound object
 but either a string or a number or a boolean.
 
+There are a maximum number of 8 actions in a given rule.
+
 #### Rule Conditions
 
 For some reason the value for `"value"` must be a string, e.g. `"1"` NOT `1`.
@@ -106,6 +108,9 @@ For some reason the value for `"value"` must be a string, e.g. `"1"` NOT `1`.
 While using a condition with `"eq"` and `"0"` seems to work just fine, Philips
 Hue rules never use `"eq"` with `"0"`.  They always instead use `"lt"` with
 `"1"`.  Why?
+
+There are a maximum number of conditions in a given rule.  The limit **may** be
+8, like actions
 
 #### Rule Operators
 
