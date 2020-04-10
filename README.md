@@ -73,6 +73,12 @@ specification where each bit stands for a day of the week:
 |-----|-----|-----|-----|-----|-----|-----|
 |   64|   32|   16|    8|    4|    2|    1|
 
+#### Colors (x,y)
+
+Hue seems to represent x- and y-values for colors using a fixed-point register.
+It is equivalent to an integer divided by 10_000.  It has an absolute
+accuracy of 0.0001.
+
 ### Schedules
 
 Schedules (inexplicably) use the long form of the address in `"command"`, i.e.
