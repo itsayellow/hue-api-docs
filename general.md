@@ -69,6 +69,10 @@ CCT(x,y) = -449n^3 +3525n^2 -6823.3n + 5520.33
 
 n = (x − x\_e)/(y - y\_e) where  (x\_e = 0.3320, y\_e = 0.1858)
 
+There is a maximum distance in (u,v) space that CIE recommends as an acceptable
+CCT (an acceptable perceptual match to the Color Temperature locus.)  It is
+0.05 distance in the (u,v) space.
+
 ### Links
 
 ["Correlated Color Temperature (Wikipedia)"](https://en.wikipedia.org/wiki/Color_temperature#Correlated_color_temperature)
