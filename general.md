@@ -49,7 +49,29 @@ and little-y are X and Y normalized to sum(X,Y,Z).
 Hue also says that `brightness = Y` which presumably means that `bri = 254*Y`.
 (??)
 
+#### Correlated Color Temperature
+
+There is a locus of points within the color space that corresponds to the
+spectrums at various temperatures of a black body.
+
+To find the Correlated Color Temperature (equivalent Color Temperature for
+colors possibly not on the locus) we must find the perceptually closest color
+on the locus to a given color.  To make perceptual distance equal to coordiante
+distance, we need to measure distance on a **perceptually uniform** coordinate
+space.  The color space invented for this purpose is the (u,v) color space.
+Converting to the (u,v) coordinate space and finding the closest point on the
+black body locus will be the most accurate CCT possible.
+
+The typically used approximation to find CCT in the (x,y) color space is the
+McCamy approximation.
+
+CCT(x,y) = -449n^3 +3525n^2 -6823.3n + 5520.33
+
+n = (x − x\_e)/(y - y\_e) where  (x\_e = 0.3320, y\_e = 0.1858)
+
 ### Links
+
+["Correlated Color Temperature (Wikipedia)"](https://en.wikipedia.org/wiki/Color_temperature#Correlated_color_temperature)
 
 ["How to convert between sRGB and
 CIEXYZ"](https://www.image-engineering.de/library/technotes/958-how-to-convert-between-srgb-and-ciexyz)
