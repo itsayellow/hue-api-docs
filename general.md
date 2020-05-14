@@ -74,6 +74,7 @@ CCT (an acceptable perceptual match to the Color Temperature locus.)  It is
 0.05 distance in the (u,v) space.
 
 ### Links
+["Planckian locus (Wikipedia)"](https://en.wikipedia.org/wiki/Planckian_locus)
 
 ["Correlated Color Temperature (Wikipedia)"](https://en.wikipedia.org/wiki/Color_temperature#Correlated_color_temperature)
 
