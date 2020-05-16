@@ -87,3 +87,12 @@ Matrices"](http://www.brucelindbloom.com/index.html?Eqn_RGB_XYZ_Matrix.html)
 
 [Wikipedia "CIE 1931 color
 space"](https://en.wikipedia.org/wiki/CIE_1931_color_space)
+
+## References
+
+* Robertson, Alan R. (November 1968). "Computation of Correlated Color Temperature and Distribution Temperature". JOSA. 58 (11): 1528–1535. Bibcode:1968JOSA...58.1528R.
+  * Interpolating between adjacent Color Temperatures to gain accuracy.
+
+* Krystek, Michael P. (January 1985). "An algorithm to calculate correlated colour temperature". Color Research & Application. 10 (1): 38–40. doi:10.1002/col.5080100109.
+  * Extremely Accurate method of computing (u,v) on the Planckian locus from
+    Color Temperature.
