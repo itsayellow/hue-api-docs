@@ -94,5 +94,5 @@ space"](https://en.wikipedia.org/wiki/CIE_1931_color_space)
   * Interpolating between adjacent Color Temperatures to gain accuracy.
 
 * Krystek, Michael P. (January 1985). "An algorithm to calculate correlated colour temperature". Color Research & Application. 10 (1): 38–40. doi:10.1002/col.5080100109.
-  * Extremely accurate method of computing (u,v) on the Planckian locus from
-    Color Temperature.
+  * Extremely accurate method of computing (u,v) and du/dT, dv/dT on the Planckian locus from Color Temperature.
+  * Efficient binary search algorithm for accurate Correlated Color Temperature determination from (u,v).
