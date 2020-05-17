@@ -65,9 +65,9 @@ black body locus will be the most accurate CCT possible.
 The typically used approximation to find CCT in the (x,y) color space is the
 McCamy approximation.
 
-CCT(x,y) = -449n^3 +3525n^2 -6823.3n + 5520.33
+CCT(x,y) = -449n<sup>3</sup> +3525n<sup>2</sup> -6823.3n + 5520.33
 
-n = (x − x\_e)/(y - y\_e) where  (x\_e = 0.3320, y\_e = 0.1858)
+n = (x − x<sub>e</sub>)/(y - y<sub>e</sub>) where  (x<sub>e</sub> = 0.3320, y<sub>e</sub> = 0.1858)
 
 There is a maximum distance in (u,v) space that CIE recommends as an acceptable
 CCT (an acceptable perceptual match to the Color Temperature locus.)  It is
